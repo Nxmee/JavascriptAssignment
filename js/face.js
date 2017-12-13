@@ -57,7 +57,6 @@ function whenClick(evt) {
     }
     //test if clicking right eye
     if (Math.pow(pos.x - (head.center[0] + head.eyeWidth),2) + Math.pow(pos.y - head.center[1],2) <= Math.pow(head.eyeRad,2)) {
-      console.log("right eye clicked")
       if(head.expression == 2 && head.rightTearCount < 3) {
         head.rightTearCount += 1;
       }
@@ -244,9 +243,9 @@ var canvas = document.getElementById('facecanvas');
 var context = canvas.getContext('2d');
 var head = new face();
 var hairs = [new Image(), new Image(), new Image()]
-hairs[0].src = "./img/hair1_fit.png";
-hairs[1].src = "./img/hair2_fit.png";
-hairs[2].src = "./img/hair3_fit.png";
+hairs[0].src = "./img/hair1.png";
+hairs[1].src = "./img/hair2.png";
+hairs[2].src = "./img/hair3.png";
 const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
 
