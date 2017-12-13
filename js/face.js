@@ -1,3 +1,5 @@
+//Written by Chris Hart
+
 // functions
 
 //mouse interaction
@@ -242,9 +244,9 @@ var canvas = document.getElementById('facecanvas');
 var context = canvas.getContext('2d');
 var head = new face();
 var hairs = [new Image(), new Image(), new Image()]
-hairs[0].src = "img/hair1_fit.png";
-hairs[1].src = "img/hair2_fit.png";
-hairs[2].src = "img/hair3_fit.png";
+hairs[0].src = "./img/hair1_fit.png";
+hairs[1].src = "./img/hair2_fit.png";
+hairs[2].src = "./img/hair3_fit.png";
 const WIDTH = canvas.width;
 const HEIGHT = canvas.height;
 
